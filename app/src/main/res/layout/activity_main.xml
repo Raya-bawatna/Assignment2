@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BMICalculation">
+<TableRow>
+    <Button
+        android:id="@+id/btnOpen"
+        android:text="open Timer"
+        android:onClick="onClickOpen"/>
+</TableRow>
+<TableRow>
+    <TextView
+        android:text="Name:"
+        style="@style/txtStyle"
+        android:width="60dp"/>
+
+    <EditText
+        android:id="@+id/edtName"
+        android:width="10dp"/>
+</TableRow>
+    <TableRow>
+    <TextView
+        android:text="Height:"
+        style="@style/txtStyle"
+        android:width="120dp"/>
+
+    <EditText
+        android:id="@+id/edtHeight"
+        android:width="200dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Weight:"
+            style="@style/txtStyle"
+            android:width="120dp"/>
+
+        <EditText
+            android:id="@+id/edtWeight"
+            android:width="200dp"/>
+    </TableRow>
+    <TableRow>
+    <TextView
+        android:text="Gender:"
+        style="@style/txtStyle"
+        android:width="120dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="30dp"
+            android:layout_marginTop="5dp"/>
+    </TableRow>
+    <TableRow>
+        <TextView/>
+        <CheckBox
+            android:id="@+id/chkRememberInfo"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:text="Remember Information"/>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Save Information"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+
+
+            android:onClick="onEnterClicked"/>
+
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnCalculate"
+            android:text="Calculate BMI"
+            android:onClick="calculateBMI"
+            android:layout_marginTop="8dp"/>
+        <EditText
+            android:id="@+id/edtResult"
+            android:width="20dp"/>
+
+    </TableRow>
+
+
+
+
+</TableLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/timer"
+    android:orientation="vertical"
+    tools:context="raya.cs.birzeit.assignment2.Timer">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="56sp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:layout_gravity="center"
+
+        android:id="@+id/txtView"
+
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:onClick="onClickStart"
+        android:text="Start"
+        android:id="@+id/btnStart"
+
+        android:layout_below="@id/txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/btnStop"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:onClick="onClickStop"
+        android:layout_gravity="center"
+
+        android:layout_below="@id/txtView"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnStop"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:layout_gravity="center"
+        android:onClick="onClickPause"
+        android:layout_below="@id/btnStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnPause"
+        android:layout_margin="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>
